@@ -6,7 +6,7 @@ author: Joker
 e-mail: 824219521@qq.com
 weChat: w_z_z_1991
 ```
-
+项目中用到了`RxSwift`和`CoreBluetooth`两个`framework`, 其中`RxSwift`目录还不支持`Swift 4.0`，所以需要设置编译选项`Swift 3.2`编译
 
 本说明书针对的床头灯型号为：`XMCTD01YL` - [Yeelight床头灯官网](http://www.yeelight.com/zh_CN/product/yeelight-ctd)
 
