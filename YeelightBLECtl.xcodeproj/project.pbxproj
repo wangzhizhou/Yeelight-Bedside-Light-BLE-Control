@@ -1,0 +1,456 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6C3E5967889DCDFF43E0D712 /* Pods_YeelightBLECtl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B3F76DEC4F03B288402C3AB /* Pods_YeelightBLECtl.framework */; };
+		F322F2A41F776F8A00C396B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F322F2A31F776F8A00C396B9 /* AppDelegate.swift */; };
+		F322F2A91F776F8B00C396B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F322F2A71F776F8B00C396B9 /* Main.storyboard */; };
+		F322F2AB1F776F8B00C396B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F322F2AA1F776F8B00C396B9 /* Assets.xcassets */; };
+		F322F2AE1F776F8B00C396B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F322F2AC1F776F8B00C396B9 /* LaunchScreen.storyboard */; };
+		F322F2CA1F77713200C396B9 /* JokerAlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F322F2C31F77713200C396B9 /* JokerAlertManager.swift */; };
+		F322F2CB1F77713200C396B9 /* BLEManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F322F2C51F77713200C396B9 /* BLEManager.swift */; };
+		F322F2CC1F77713200C396B9 /* BLEManager+CBPeripheralDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F322F2C61F77713200C396B9 /* BLEManager+CBPeripheralDelegate.swift */; };
+		F322F2CD1F77713200C396B9 /* BLEManager+CBCentralManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F322F2C71F77713200C396B9 /* BLEManager+CBCentralManagerDelegate.swift */; };
+		F322F2CE1F77713200C396B9 /* BLEManager+CBPeripheralManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F322F2C81F77713200C396B9 /* BLEManager+CBPeripheralManagerDelegate.swift */; };
+		F322F2CF1F77713200C396B9 /* YeelightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F322F2C91F77713200C396B9 /* YeelightViewController.swift */; };
+		F322F2D11F7772F800C396B9 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F322F2D01F7772F800C396B9 /* CoreBluetooth.framework */; };
+		F322F2D31F7773F300C396B9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F322F2D21F7773F300C396B9 /* README.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1516AA704E7E853AEFF071FC /* Pods-YeelightBLECtl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YeelightBLECtl.release.xcconfig"; path = "Pods/Target Support Files/Pods-YeelightBLECtl/Pods-YeelightBLECtl.release.xcconfig"; sourceTree = "<group>"; };
+		3B3F76DEC4F03B288402C3AB /* Pods_YeelightBLECtl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YeelightBLECtl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A98791830FF89975FA2DD1FE /* Pods-YeelightBLECtl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YeelightBLECtl.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YeelightBLECtl/Pods-YeelightBLECtl.debug.xcconfig"; sourceTree = "<group>"; };
+		F322F2A01F776F8A00C396B9 /* YeelightBLECtl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YeelightBLECtl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F322F2A31F776F8A00C396B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F322F2A81F776F8B00C396B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F322F2AA1F776F8B00C396B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F322F2AD1F776F8B00C396B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F322F2AF1F776F8B00C396B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F322F2C31F77713200C396B9 /* JokerAlertManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JokerAlertManager.swift; sourceTree = "<group>"; };
+		F322F2C51F77713200C396B9 /* BLEManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLEManager.swift; sourceTree = "<group>"; };
+		F322F2C61F77713200C396B9 /* BLEManager+CBPeripheralDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BLEManager+CBPeripheralDelegate.swift"; sourceTree = "<group>"; };
+		F322F2C71F77713200C396B9 /* BLEManager+CBCentralManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BLEManager+CBCentralManagerDelegate.swift"; sourceTree = "<group>"; };
+		F322F2C81F77713200C396B9 /* BLEManager+CBPeripheralManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BLEManager+CBPeripheralManagerDelegate.swift"; sourceTree = "<group>"; };
+		F322F2C91F77713200C396B9 /* YeelightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YeelightViewController.swift; sourceTree = "<group>"; };
+		F322F2D01F7772F800C396B9 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		F322F2D21F7773F300C396B9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F322F29D1F776F8A00C396B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F322F2D11F7772F800C396B9 /* CoreBluetooth.framework in Frameworks */,
+				6C3E5967889DCDFF43E0D712 /* Pods_YeelightBLECtl.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		63956041994D9998B9451D7C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F322F2D01F7772F800C396B9 /* CoreBluetooth.framework */,
+				3B3F76DEC4F03B288402C3AB /* Pods_YeelightBLECtl.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C99C507643C826F5C05B0CB3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A98791830FF89975FA2DD1FE /* Pods-YeelightBLECtl.debug.xcconfig */,
+				1516AA704E7E853AEFF071FC /* Pods-YeelightBLECtl.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F322F2971F776F8A00C396B9 = {
+			isa = PBXGroup;
+			children = (
+				F322F2D21F7773F300C396B9 /* README.md */,
+				F322F2A21F776F8A00C396B9 /* YeelightBLECtl */,
+				F322F2A11F776F8A00C396B9 /* Products */,
+				C99C507643C826F5C05B0CB3 /* Pods */,
+				63956041994D9998B9451D7C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F322F2A11F776F8A00C396B9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F322F2A01F776F8A00C396B9 /* YeelightBLECtl.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F322F2A21F776F8A00C396B9 /* YeelightBLECtl */ = {
+			isa = PBXGroup;
+			children = (
+				F322F2C21F77713200C396B9 /* AppCore */,
+				F322F2A31F776F8A00C396B9 /* AppDelegate.swift */,
+				F322F2AA1F776F8B00C396B9 /* Assets.xcassets */,
+				F322F2AF1F776F8B00C396B9 /* Info.plist */,
+				F322F2AC1F776F8B00C396B9 /* LaunchScreen.storyboard */,
+				F322F2A71F776F8B00C396B9 /* Main.storyboard */,
+			);
+			path = YeelightBLECtl;
+			sourceTree = "<group>";
+		};
+		F322F2C21F77713200C396B9 /* AppCore */ = {
+			isa = PBXGroup;
+			children = (
+				F322F2C31F77713200C396B9 /* JokerAlertManager.swift */,
+				F322F2C91F77713200C396B9 /* YeelightViewController.swift */,
+				F322F2C41F77713200C396B9 /* BLE */,
+			);
+			path = AppCore;
+			sourceTree = "<group>";
+		};
+		F322F2C41F77713200C396B9 /* BLE */ = {
+			isa = PBXGroup;
+			children = (
+				F322F2C51F77713200C396B9 /* BLEManager.swift */,
+				F322F2C61F77713200C396B9 /* BLEManager+CBPeripheralDelegate.swift */,
+				F322F2C71F77713200C396B9 /* BLEManager+CBCentralManagerDelegate.swift */,
+				F322F2C81F77713200C396B9 /* BLEManager+CBPeripheralManagerDelegate.swift */,
+			);
+			path = BLE;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F322F29F1F776F8A00C396B9 /* YeelightBLECtl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F322F2B21F776F8B00C396B9 /* Build configuration list for PBXNativeTarget "YeelightBLECtl" */;
+			buildPhases = (
+				1FB02609FA0202770A1C5A9C /* [CP] Check Pods Manifest.lock */,
+				F322F29C1F776F8A00C396B9 /* Sources */,
+				F322F29D1F776F8A00C396B9 /* Frameworks */,
+				F322F29E1F776F8A00C396B9 /* Resources */,
+				B1606067C34DE67321ED00CB /* [CP] Embed Pods Frameworks */,
+				1B96C43A9E3B9E32FBEAD3FA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YeelightBLECtl;
+			productName = YeelightBLECtl;
+			productReference = F322F2A01F776F8A00C396B9 /* YeelightBLECtl.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F322F2981F776F8A00C396B9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = joker;
+				TargetAttributes = {
+					F322F29F1F776F8A00C396B9 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F322F29B1F776F8A00C396B9 /* Build configuration list for PBXProject "YeelightBLECtl" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F322F2971F776F8A00C396B9;
+			productRefGroup = F322F2A11F776F8A00C396B9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F322F29F1F776F8A00C396B9 /* YeelightBLECtl */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F322F29E1F776F8A00C396B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F322F2AE1F776F8B00C396B9 /* LaunchScreen.storyboard in Resources */,
+				F322F2AB1F776F8B00C396B9 /* Assets.xcassets in Resources */,
+				F322F2D31F7773F300C396B9 /* README.md in Resources */,
+				F322F2A91F776F8B00C396B9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1B96C43A9E3B9E32FBEAD3FA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YeelightBLECtl/Pods-YeelightBLECtl-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1FB02609FA0202770A1C5A9C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YeelightBLECtl-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1606067C34DE67321ED00CB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-YeelightBLECtl/Pods-YeelightBLECtl-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YeelightBLECtl/Pods-YeelightBLECtl-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F322F29C1F776F8A00C396B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F322F2CD1F77713200C396B9 /* BLEManager+CBCentralManagerDelegate.swift in Sources */,
+				F322F2CE1F77713200C396B9 /* BLEManager+CBPeripheralManagerDelegate.swift in Sources */,
+				F322F2CA1F77713200C396B9 /* JokerAlertManager.swift in Sources */,
+				F322F2CF1F77713200C396B9 /* YeelightViewController.swift in Sources */,
+				F322F2CC1F77713200C396B9 /* BLEManager+CBPeripheralDelegate.swift in Sources */,
+				F322F2CB1F77713200C396B9 /* BLEManager.swift in Sources */,
+				F322F2A41F776F8A00C396B9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F322F2A71F776F8B00C396B9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F322F2A81F776F8B00C396B9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F322F2AC1F776F8B00C396B9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F322F2AD1F776F8B00C396B9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F322F2B01F776F8B00C396B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F322F2B11F776F8B00C396B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F322F2B31F776F8B00C396B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A98791830FF89975FA2DD1FE /* Pods-YeelightBLECtl.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2N62934Y28;
+				INFOPLIST_FILE = YeelightBLECtl/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.joker.YeelightBLECtl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F322F2B41F776F8B00C396B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1516AA704E7E853AEFF071FC /* Pods-YeelightBLECtl.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2N62934Y28;
+				INFOPLIST_FILE = YeelightBLECtl/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.joker.YeelightBLECtl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F322F29B1F776F8A00C396B9 /* Build configuration list for PBXProject "YeelightBLECtl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F322F2B01F776F8B00C396B9 /* Debug */,
+				F322F2B11F776F8B00C396B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F322F2B21F776F8B00C396B9 /* Build configuration list for PBXNativeTarget "YeelightBLECtl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F322F2B31F776F8B00C396B9 /* Debug */,
+				F322F2B41F776F8B00C396B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F322F2981F776F8A00C396B9 /* Project object */;
+}

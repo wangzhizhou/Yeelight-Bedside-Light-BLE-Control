@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="PpZ-M1-7jk">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Yeelight Bedside-->
+        <scene sceneID="rnR-zk-dgT">
+            <objects>
+                <viewController id="8FZ-d2-GoO" customClass="YeelightViewController" customModule="YeelightBLECtl" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eSM-Ra-q2N"/>
+                        <viewControllerLayoutGuide type="bottom" id="UKO-bw-ogV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mQX-69-43z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.01" minValue="0.01" maxValue="1" continuous="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6oV-aH-tcH">
+                                <rect key="frame" x="14" y="125" width="347" height="31"/>
+                                <connections>
+                                    <action selector="setBrightnessAction:" destination="8FZ-d2-GoO" eventType="valueChanged" id="cs1-ap-fya"/>
+                                </connections>
+                            </slider>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mSb-E1-APx">
+                                <rect key="frame" x="163" y="576" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchLight:" destination="8FZ-d2-GoO" eventType="valueChanged" id="l2b-PQ-bGS"/>
+                                </connections>
+                            </switch>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="UeX-ho-mPO">
+                                <rect key="frame" x="26" y="319.5" width="323" height="29"/>
+                                <segments>
+                                    <segment title="日光"/>
+                                    <segment title="流光"/>
+                                    <segment title="颜色"/>
+                                </segments>
+                                <connections>
+                                    <action selector="lightMode:" destination="8FZ-d2-GoO" eventType="valueChanged" id="XRO-XP-LUC"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="UeX-ho-mPO" firstAttribute="leading" secondItem="mQX-69-43z" secondAttribute="leadingMargin" constant="10" id="1ZD-50-IKF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="UeX-ho-mPO" secondAttribute="trailing" constant="10" id="Fvy-LN-WjD"/>
+                            <constraint firstItem="6oV-aH-tcH" firstAttribute="top" secondItem="eSM-Ra-q2N" secondAttribute="bottom" constant="61" id="Uch-iM-lWd"/>
+                            <constraint firstItem="UKO-bw-ogV" firstAttribute="top" secondItem="mSb-E1-APx" secondAttribute="bottom" constant="60" id="i7s-md-5xz"/>
+                            <constraint firstItem="6oV-aH-tcH" firstAttribute="centerX" secondItem="mQX-69-43z" secondAttribute="centerX" id="jXe-za-VWr"/>
+                            <constraint firstAttribute="trailing" secondItem="6oV-aH-tcH" secondAttribute="trailing" constant="16" id="pYg-fo-isg"/>
+                            <constraint firstItem="mSb-E1-APx" firstAttribute="centerX" secondItem="mQX-69-43z" secondAttribute="centerX" id="wr2-Rp-oDF"/>
+                            <constraint firstItem="UeX-ho-mPO" firstAttribute="centerY" secondItem="mQX-69-43z" secondAttribute="centerY" id="y6U-5D-jY0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Yeelight Bedside" id="lsN-T5-ukA">
+                        <barButtonItem key="leftBarButtonItem" style="done" systemItem="cancel" id="xD4-nZ-kbz">
+                            <connections>
+                                <action selector="disconnect:" destination="8FZ-d2-GoO" id="tk9-y3-gyI"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="refresh" id="KLU-ae-Cj9">
+                            <connections>
+                                <action selector="scanPeripheral" destination="8FZ-d2-GoO" id="GdR-yd-KcZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="brightness" destination="6oV-aH-tcH" id="TLo-sO-ASY"/>
+                        <outlet property="lightModeSeg" destination="UeX-ho-mPO" id="nDx-Za-7cx"/>
+                        <outlet property="lightSwitch" destination="mSb-E1-APx" id="gXR-fK-DUt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wlV-9G-z1L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1871.2" y="-828.03598200899557"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vmA-Qt-jw4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PpZ-M1-7jk" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="uL1-MV-Ijh">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8FZ-d2-GoO" kind="relationship" relationship="rootViewController" id="GPY-No-wMs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DSf-K7-hWQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2545" y="-828"/>
+        </scene>
+    </scenes>
+</document>
