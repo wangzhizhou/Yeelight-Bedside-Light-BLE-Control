@@ -13,10 +13,6 @@
 		F322F2AB1F776F8B00C396B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F322F2AA1F776F8B00C396B9 /* Assets.xcassets */; };
 		F322F2AE1F776F8B00C396B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F322F2AC1F776F8B00C396B9 /* LaunchScreen.storyboard */; };
 		F322F2CA1F77713200C396B9 /* JokerAlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F322F2C31F77713200C396B9 /* JokerAlertManager.swift */; };
-		F322F2CB1F77713200C396B9 /* BLEManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F322F2C51F77713200C396B9 /* BLEManager.swift */; };
-		F322F2CC1F77713200C396B9 /* BLEManager+CBPeripheralDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F322F2C61F77713200C396B9 /* BLEManager+CBPeripheralDelegate.swift */; };
-		F322F2CD1F77713200C396B9 /* BLEManager+CBCentralManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F322F2C71F77713200C396B9 /* BLEManager+CBCentralManagerDelegate.swift */; };
-		F322F2CE1F77713200C396B9 /* BLEManager+CBPeripheralManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F322F2C81F77713200C396B9 /* BLEManager+CBPeripheralManagerDelegate.swift */; };
 		F322F2CF1F77713200C396B9 /* YeelightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F322F2C91F77713200C396B9 /* YeelightViewController.swift */; };
 		F322F2D11F7772F800C396B9 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F322F2D01F7772F800C396B9 /* CoreBluetooth.framework */; };
 		F322F2D31F7773F300C396B9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F322F2D21F7773F300C396B9 /* README.md */; };
@@ -33,10 +29,6 @@
 		F322F2AD1F776F8B00C396B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F322F2AF1F776F8B00C396B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F322F2C31F77713200C396B9 /* JokerAlertManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JokerAlertManager.swift; sourceTree = "<group>"; };
-		F322F2C51F77713200C396B9 /* BLEManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLEManager.swift; sourceTree = "<group>"; };
-		F322F2C61F77713200C396B9 /* BLEManager+CBPeripheralDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BLEManager+CBPeripheralDelegate.swift"; sourceTree = "<group>"; };
-		F322F2C71F77713200C396B9 /* BLEManager+CBCentralManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BLEManager+CBCentralManagerDelegate.swift"; sourceTree = "<group>"; };
-		F322F2C81F77713200C396B9 /* BLEManager+CBPeripheralManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BLEManager+CBPeripheralManagerDelegate.swift"; sourceTree = "<group>"; };
 		F322F2C91F77713200C396B9 /* YeelightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YeelightViewController.swift; sourceTree = "<group>"; };
 		F322F2D01F7772F800C396B9 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		F322F2D21F7773F300C396B9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -95,7 +87,8 @@
 		F322F2A21F776F8A00C396B9 /* YeelightBLECtl */ = {
 			isa = PBXGroup;
 			children = (
-				F322F2C21F77713200C396B9 /* AppCore */,
+				F322F2C31F77713200C396B9 /* JokerAlertManager.swift */,
+				F322F2C91F77713200C396B9 /* YeelightViewController.swift */,
 				F322F2A31F776F8A00C396B9 /* AppDelegate.swift */,
 				F322F2AA1F776F8B00C396B9 /* Assets.xcassets */,
 				F322F2AF1F776F8B00C396B9 /* Info.plist */,
@@ -103,27 +96,6 @@
 				F322F2A71F776F8B00C396B9 /* Main.storyboard */,
 			);
 			path = YeelightBLECtl;
-			sourceTree = "<group>";
-		};
-		F322F2C21F77713200C396B9 /* AppCore */ = {
-			isa = PBXGroup;
-			children = (
-				F322F2C31F77713200C396B9 /* JokerAlertManager.swift */,
-				F322F2C91F77713200C396B9 /* YeelightViewController.swift */,
-				F322F2C41F77713200C396B9 /* BLE */,
-			);
-			path = AppCore;
-			sourceTree = "<group>";
-		};
-		F322F2C41F77713200C396B9 /* BLE */ = {
-			isa = PBXGroup;
-			children = (
-				F322F2C51F77713200C396B9 /* BLEManager.swift */,
-				F322F2C61F77713200C396B9 /* BLEManager+CBPeripheralDelegate.swift */,
-				F322F2C71F77713200C396B9 /* BLEManager+CBCentralManagerDelegate.swift */,
-				F322F2C81F77713200C396B9 /* BLEManager+CBPeripheralManagerDelegate.swift */,
-			);
-			path = BLE;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +110,6 @@
 				F322F29D1F776F8A00C396B9 /* Frameworks */,
 				F322F29E1F776F8A00C396B9 /* Resources */,
 				B1606067C34DE67321ED00CB /* [CP] Embed Pods Frameworks */,
-				1B96C43A9E3B9E32FBEAD3FA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -198,21 +169,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1B96C43A9E3B9E32FBEAD3FA /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YeelightBLECtl/Pods-YeelightBLECtl-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		1FB02609FA0202770A1C5A9C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -238,10 +194,16 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-YeelightBLECtl/Pods-YeelightBLECtl-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/OrzBLE/OrzBLE.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxBluetoothKit/RxBluetoothKit.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OrzBLE.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBluetoothKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,12 +218,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F322F2CD1F77713200C396B9 /* BLEManager+CBCentralManagerDelegate.swift in Sources */,
-				F322F2CE1F77713200C396B9 /* BLEManager+CBPeripheralManagerDelegate.swift in Sources */,
 				F322F2CA1F77713200C396B9 /* JokerAlertManager.swift in Sources */,
 				F322F2CF1F77713200C396B9 /* YeelightViewController.swift in Sources */,
-				F322F2CC1F77713200C396B9 /* BLEManager+CBPeripheralDelegate.swift in Sources */,
-				F322F2CB1F77713200C396B9 /* BLEManager.swift in Sources */,
 				F322F2A41F776F8A00C396B9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
